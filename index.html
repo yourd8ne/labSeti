@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Автозавершение</title>
+  <style>
+    /* Стили для выпадающего списка */
+    #autocomplete-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      z-index: 1;
+    }
+
+    #autocomplete-list li {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #autocomplete-list li:hover {
+      background-color: #e9e9e9;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="input-field" onkeyup="showAutoComplete(event)">
+  <ul id="autocomplete-list"></ul>
+  
+  <script src="script.js"></script>
+</body>
+</html>
